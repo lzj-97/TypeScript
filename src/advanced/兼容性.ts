@@ -4,7 +4,7 @@
 
 (() => {
   let s: string = 'a'
-  s = null
+  // s = null
 
 
   // 接口兼容性
@@ -45,15 +45,15 @@
   let c = (...args: number[]) => {}
   a = b
   a = c
-  b = a
-  b = c
+  // b = a
+  // b = c
   c = a
   c = b
 
 
   // 参数类型
   let handler3 = (a: string) => {}
-  hof(handler3)
+  // hof(handler3)
 
 
   interface Point3D {
@@ -71,7 +71,7 @@
   let p3d = (point: Point3D) => {};
   let p2d = (point: Point2D) => {};
   p3d = p2d
-  p2d = p3d
+  // p2d = p3d
 
   // 目标函数的返回值范围必须大于或等于原函数
   let f = () => ({name: 'll'})
@@ -108,8 +108,8 @@
 
   let aa = new A(1, 2)
   let bb = new B(1)
-  aa = bb
-  bb = aa
+  // aa = bb
+  // bb = aa
 
   // 父类和子类的实例互相兼容
   class C extends A {}
@@ -121,9 +121,9 @@
   interface Empty<T> {
     value: T
   }
-  let obj1: Empty<number> = {}
-  let obj2: Empty<string> = {}
-  obj1 = obj2
+  // let obj1: Empty<number> = {}
+  // let obj2: Empty<string> = {}
+  // obj1 = obj2
 
   let log1 = <T>(x: T): T => {
     console.log('x');

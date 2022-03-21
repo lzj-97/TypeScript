@@ -60,7 +60,8 @@ let chars2: StringArray = {
 };
 
 interface Name {
-  // string无法兼容number，any可以
+  // interface可索引类型 支持number,string索引签名
+  // 可以同时使用两种类型的索引，但是数字索引的返回值必须是字符串索引返回值类型的子类型
   // [x: string]: string,
   [x: string]: any,
   [x: number]: number

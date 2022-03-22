@@ -13,8 +13,8 @@
     return keys.map(key => obj[key])
   }
   console.log(getValues(obj, ['a','b']));
-  console.log(getValues(obj, ['a','d']));
-  console.log(getValues(obj, ['e','d']));
+  // console.log(getValues(obj, ['a','d']));
+  // console.log(getValues(obj, ['e','d']));
 
   // keyof T    索引类型查询
   interface Obj {
